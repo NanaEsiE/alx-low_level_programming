@@ -7,6 +7,7 @@
 *
 * Return: Always 0.
 */
+
 int main(void)
 {
 int count;
@@ -27,6 +28,5 @@ printf("\n");
 else
 printf(", ");
 }
-
 return (0);
 }

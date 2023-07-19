@@ -1,6 +1,5 @@
-#ifndef main.h
-#define main.h
-
+#ifndef main_header
+#define main_header
 
 int _putchar(char);
 void print_alphabet(void);

@@ -3,12 +3,12 @@
 #include "3-calc.h"
 
 /**
- * main - when user runs main,
- * user should give two integers and an operator and
- * main will calculate the math via a function pointer.
+ * main - check code for alx students,
+ * user will give two integers and an operator and
+ * main will calculate the math using a function pointer.
  * prints sum, difference, product, dividend, or remainder
  * @argc: argument counter
- * @argv: arguments
+ * @argv: arguments vector
  * Return: 0 on sucess
  */
 
@@ -24,7 +24,8 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	/* convert user input to ints and point to correct operator function */
+/* convert user input into ints and point to correct operator function 
+*/
 	n1 = atoi(argv[1]);
 	n2 = atoi(argv[3]);
 	f = get_op_func(argv[2]);

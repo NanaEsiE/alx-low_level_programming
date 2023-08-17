@@ -24,8 +24,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-/* convert user input into ints and point to correct operator function 
-*/
+/* convert user input into ints and point to correct operator function */
 	n1 = atoi(argv[1]);
 	n2 = atoi(argv[3]);
 	f = get_op_func(argv[2]);

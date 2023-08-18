@@ -4,9 +4,9 @@
 /**
  * print_strings - prints strings
  * @separator: seperator between strings
- * @n: number of arguements
+ * @n: number of arguments
  */
-void print_strings(const char *separator, unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list args;
 	unsigned int i;

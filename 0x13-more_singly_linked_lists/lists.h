@@ -5,17 +5,16 @@
 #include <stdlib.h>
 
 /**
- * struct listint_s - singly linked list used.
- * @d: integer.
- * @next: next node
+ * struct listint_s - singly linked list
+ * @n: integer
+ * @next: points to the next node
  *
- * Description: singly linked list node structure used.
- * alx se project for Nana Esi
+ * Description: singly linked list node structure
  * 
  */
 typedef struct listint_s
 {
-    int d;
+    int n;
     struct listint_s *next;
 } listint_t;
 
@@ -30,8 +29,7 @@ typedef struct listp_s
 {
 	void *d;
 	struct listp_s *next;
-}
-listp_t;
+} listp_t;
 
 
 size_t print_listint(const listint_t *h);

@@ -1,20 +1,38 @@
-#include "lists.h"
+#ifndef _LISTS_
+#define _LISTS_
+
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
- * listint-len - prints elements in linked list.
- * @p: list.
+ * struct listint_s - singly linked list used.
+ * @s: integer.
+ * @next: next node
  *
- * Return: nodes.
+ * Description: singly linked list node structure used.
+ * alx se project for Nana Esi
+ * 
  */
-
-size_t listint_len(const listint_t *p)
+typedef struct listint_s
 {
-	size_t nodes = 0;
+    int s;
+    struct listint_s *next;
+} listint_t;
 
-	while (p !=NULL)
-	{
-		p = p->next;
-		nodes++;
-	}
-	return(nodes)
-}
+size_t print_listint(const listint_t *h);
+size_t listint_len(const listint_t *h);
+listint_t *add_nodeint(listint_t **head, const int s);
+listint_t *add_nodeint_end(listint_t **head, const int s);
+void free_listint(listint_t *head);
+void free_listint2(listint_t **head);
+int pop_listint(listint_t **head);
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
+int sum_listint(listint_t *head);
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int s);
+int delete_nodeint_at_index(listint_t **head, unsigned int index);
+listint_t *reverse_listint(listint_t **head);
+size_t print_listint_safe(const listint_t *head);
+size_t free_listint_safe(listint_t **h);
+listint_t *find_listint_loop(listint_t *head);
+
+#endif

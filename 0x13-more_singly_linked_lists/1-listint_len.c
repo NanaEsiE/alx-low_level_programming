@@ -3,7 +3,7 @@
 /**
  * listint_len - returns num of elements in a listint_t list.
  * @p: list.
- * 
+ *
  * Return: nodes
  */
 

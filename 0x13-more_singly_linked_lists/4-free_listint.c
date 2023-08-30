@@ -2,7 +2,7 @@
 
 /**
  * free_listint - free function
- * @head - describe head
+ * @head: describe head
  *
  * Return: NULL
  */

@@ -2,18 +2,18 @@
 
 /**
  * print_listint - prints all elements of list.
- * @p: head of list.
+ * @h: head of list.
  *
  * Return: nodes.
  */
-size_t print_listint(const listint_t *p)
+size_t print_listint(const listint_t *h)
 {
 	size_t nodes = 0;
 
-	while (p != NULL)
+	while (h)
 	{
-		printf("%d\n", p->data);
-		p = p->next;
+		printf("%d\n", h->n);
+		h = h->next;
 		nodes++;
 	}
 	return (nodes);

@@ -2,16 +2,20 @@
 
 /**
  * listint_len - returns num of elements in a listint_t list.
- * @p: list.
+ * @h: list.
  *
  * Return: nodes
  */
 
-size_t listint_len(const listint_t *p)
+size_t listint_len(const listint_t *h)
 {
-	size_t i;
+	size_t num = 0;
 
-	for (i = 0; p; i++)
-		p = p->next;
-	return (i);
+	while(h)
+	{
+		num++;
+		h = h->next;
+	}
+
+	return (num);
 }
